@@ -6,86 +6,58 @@
 <title>Servicios Profesionales</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: linear-gradient(180deg, #1b4332 0%, #2d6a4f 50%, #40916c 100%);
-    color: #fff;
-    line-height: 1.6;
-    min-height: 100vh;
-  }
-  .container { max-width: 680px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .hero { text-align: center; padding: 4rem 0 3rem; }
-  .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
-  .hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; margin-bottom: 2rem; }
-  .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0.5rem;
-    transition: all 0.2s;
-  }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f1f8e9; color: #1b4332; line-height: 1.6; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .hero { background: linear-gradient(135deg, #2d6a4f, #40916c); color: #fff; border-radius: 0 0 32px 32px; padding: 3rem 1.5rem; text-align: center; margin-bottom: 2rem; }
+  .hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .hero p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 1.5rem; }
+  .btn { display: inline-block; padding: 0.875rem 1.75rem; border-radius: 50px 20px 50px 20px; text-decoration: none; font-size: 0.95rem; font-weight: 600; margin: 0.25rem; transition: all 0.2s; }
   .btn-call { background: #fff; color: #2d6a4f; }
   .btn-whatsapp { background: #25d366; color: #fff; }
-  .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
-  section { padding: 2rem 0; }
-  h2 { font-size: 1.5rem; margin-bottom: 1rem; }
-  .service {
-    background: rgba(255,255,255,0.1);
-    border-radius: 16px;
-    padding: 1.25rem;
-    margin-bottom: 0.75rem;
-  }
-  .service h3 { font-size: 1.1rem; margin-bottom: 0.25rem; }
-  .service p { color: rgba(255,255,255,0.8); font-size: 0.95rem; }
-  .price { color: #b7e4c7 !important; font-weight: 700; }
-  .contact p { margin-bottom: 0.5rem; }
-  .contact a { color: #b7e4c7; text-decoration: none; font-weight: 600; }
-  footer { text-align: center; padding: 2rem 0; color: rgba(255,255,255,0.7); font-size: 0.85rem; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(45,106,79,0.2); }
+  section { margin-bottom: 2rem; }
+  h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 3px; color: #74c69d; margin-bottom: 1rem; }
+  .svc { background: #fff; border-radius: 24px 40px 24px 40px; padding: 1.5rem; margin-bottom: 0.75rem; box-shadow: 0 2px 10px rgba(45,106,79,0.06); }
+  .svc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem; }
+  .svc-name { font-size: 1.1rem; font-weight: 700; color: #2d6a4f; }
+  .svc-price { background: #d8f3dc; color: #2d6a4f; padding: 0.35rem 0.75rem; border-radius: 50px 16px 50px 16px; font-weight: 700; font-size: 0.8rem; }
+  .svc-desc { color: #888; font-size: 0.9rem; }
+  .about { background: #fff; border-radius: 24px 40px 24px 40px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(45,106,79,0.06); font-size: 0.95rem; color: #555; }
+  .contact { background: #fff; border-radius: 24px 40px 24px 40px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(45,106,79,0.06); }
+  .contact-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0; font-size: 0.95rem; }
+  .ci { width: 36px; height: 36px; border-radius: 50% 16px 50% 16px; background: #d8f3dc; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+  .contact a { color: #2d6a4f; text-decoration: none; font-weight: 600; }
+  footer { text-align: center; padding: 2rem 0; color: #aaa; font-size: 0.8rem; }
 </style>
 </head>
 <body>
-  <div class="container">
-    <div class="hero">
-      <h1>Servicios Profesionales</h1>
-      <p>Calidad y confianza en cada trabajo</p>
-      <a href="tel:+51999999999" class="btn btn-call">📞 Llamar ahora</a>
-      <a href="https://wa.me/51999999999" class="btn btn-whatsapp">💬 WhatsApp</a>
-    </div>
-    <section>
-      <h2>Servicios</h2>
-      <div class="service">
-        <h3>Servicio 1</h3>
-        <p>Descripción del servicio</p>
-        <p class="price">Desde S/ 50</p>
-      </div>
-      <div class="service">
-        <h3>Servicio 2</h3>
-        <p>Descripción del servicio</p>
-        <p class="price">Desde S/ 80</p>
-      </div>
-      <div class="service">
-        <h3>Servicio 3</h3>
-        <p>Descripción del servicio</p>
-        <p class="price">Desde S/ 100</p>
-      </div>
-    </section>
-    <section>
-      <h2>Sobre mí</h2>
-      <p>Profesional con años de experiencia brindando servicios de calidad. Compromiso, puntualidad y atención personalizada.</p>
-    </section>
-    <section class="contact">
-      <h2>Contacto</h2>
-      <p><strong>Teléfono:</strong> <a href="tel:+51999999999">+51 999 999 999</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/51999999999">+51 999 999 999</a></p>
-      <p><strong>Horario:</strong> Lunes a Sábado, 9am - 6pm</p>
-      <p><strong>Zona:</strong> Lima Metropolitana</p>
-    </section>
-    <footer>
-      <p>© 2026 Servicios Profesionales</p>
-    </footer>
+<div class="wrap">
+  <div class="hero">
+    <h1>Servicios Profesionales</h1>
+    <p>Calidad y confianza en cada trabajo</p>
+    <a href="tel:+51999999999" class="btn btn-call">📞 Llamar ahora</a>
+    <a href="https://wa.me/51999999999" class="btn btn-whatsapp">💬 WhatsApp</a>
   </div>
+  <section>
+    <h2>Servicios</h2>
+    <div class="svc"><div class="svc-top"><span class="svc-name">Servicio 1</span><span class="svc-price">S/ 50+</span></div><p class="svc-desc">Descripción del servicio</p></div>
+    <div class="svc"><div class="svc-top"><span class="svc-name">Servicio 2</span><span class="svc-price">S/ 80+</span></div><p class="svc-desc">Descripción del servicio</p></div>
+    <div class="svc"><div class="svc-top"><span class="svc-name">Servicio 3</span><span class="svc-price">S/ 100+</span></div><p class="svc-desc">Descripción del servicio</p></div>
+  </section>
+  <section>
+    <h2>Sobre mí</h2>
+    <div class="about">Profesional con años de experiencia brindando servicios de calidad. Compromiso, puntualidad y atención personalizada.</div>
+  </section>
+  <section>
+    <h2>Contacto</h2>
+    <div class="contact">
+      <div class="contact-row"><span class="ci">📞</span><span><a href="tel:+51999999999">+51 999 999 999</a></span></div>
+      <div class="contact-row"><span class="ci">💬</span><span><a href="https://wa.me/51999999999">+51 999 999 999</a></span></div>
+      <div class="contact-row"><span class="ci">🕐</span><span>Lunes a Sábado, 9am - 6pm</span></div>
+      <div class="contact-row"><span class="ci">📍</span><span>Lima Metropolitana</span></div>
+    </div>
+  </section>
+  <footer>© 2026 Servicios Profesionales</footer>
+</div>
 </body>
 </html>
